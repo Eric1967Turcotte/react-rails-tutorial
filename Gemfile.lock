@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/reactjs/react-rails.git
+  revision: f8148d57a6d96b27bddfaef9f9bf26e233b27bd6
+  branch: master
+  specs:
+    react-rails (2.6.1)
+      babel-transpiler (>= 0.7.0)
+      connection_pool
+      execjs
+      railties (>= 3.2)
+      tilt
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,6 +74,10 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
@@ -77,8 +93,10 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     concurrent-ruby (1.1.8)
+    connection_pool (2.2.5)
     crass (1.0.6)
     erubi (1.10.0)
+    execjs (2.8.0)
     ffi (1.15.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -161,6 +179,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    showdown-rails (0.1.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -210,8 +231,10 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.3, >= 6.1.3.2)
+  react-rails!
   sass-rails (>= 6)
   selenium-webdriver
+  showdown-rails
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
